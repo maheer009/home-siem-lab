@@ -62,7 +62,33 @@ Windows PowerShell Operational log collection was configured, but the expected P
 
 ## Lab Architecture
 
-Architecture diagram and supporting screenshots will be added as the portfolio evidence is organized.
+The lab uses an Ubuntu server running Wazuh and a Windows 10 endpoint connected through a VirtualBox NAT Network.
+
+## Lab Evidence
+
+### 1. Wazuh Dashboard
+
+Overview of the Wazuh SIEM dashboard.
+
+![Wazuh Dashboard](02-wazuh-dashboard.png)
+
+### 2. Windows Agent Status
+
+The Wazuh manager reports `windows-lab-01` as Active.
+
+![Windows Agent Active](03-windows-agent-active.png)
+
+### 3. Windows Event Monitoring
+
+Windows endpoint events displayed in Wazuh Threat Hunting.
+
+![Windows Events](04-windows-events.png)
+
+### 4. CIS Security Assessment
+
+Wazuh assessment results for the Windows endpoint using the CIS Microsoft Windows 10 Enterprise Benchmark v4.0.0.
+
+![CIS Assessment](06-sca-assessment.png)
 
 ## Disclaimer
 
