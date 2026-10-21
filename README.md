@@ -68,7 +68,9 @@ Windows PowerShell Operational log collection was configured, but the expected P
 
 ## Lab Architecture
 
-The lab uses an Ubuntu server running Wazuh and a Windows 10 endpoint connected through a VirtualBox NAT Network.
+The lab runs on Oracle VirtualBox using a NAT Network (`tcm`). The Windows endpoint forwards security events to the Ubuntu-based Wazuh all-in-one server for analysis and investigation.
+
+![Home SIEM Lab Architecture](01-lab-architecture.png)
 
 ## Lab Evidence
 
