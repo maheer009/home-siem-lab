@@ -45,6 +45,12 @@ Used Wazuh SCA to assess the Windows endpoint against the CIS Microsoft Windows 
 
 Remediated the policy setting **Remove access to "Pause updates" feature** by enabling it through Group Policy, then refreshed the assessment and verified that the check changed from Failed to Passed.
 
+### 5. Verified CIS Remediation
+
+Enabled the Windows Group Policy setting to remove access to the "Pause updates" feature. A subsequent Wazuh assessment reported the check as **Passed**.
+
+![CIS remediation check passed](07-sca-remediation-passed.png)
+
 ## Investigation Notes
 
 Windows PowerShell Operational log collection was configured, but the expected PowerShell events were not confirmed in Wazuh Threat Hunting during testing. This remains an area for further troubleshooting.
